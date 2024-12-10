@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-color: #000000;
+    --white: #fff;
+    --card-color: #ffffff66;
+    --font-family: "Montserrat", serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    max-width: 1200px;
+    margin: 1rem auto;
+    background-color: var(--bg-color);
+    color: var(--white);
+}
+
+.header {
+    padding: 2rem 0rem;
+}
+
+.header .header-title {
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 1.3rem;
+    color: #bd80f7;
+    font-family: var(--font-family);
+}
+
+.header .header-p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+.header-p .mentor {
+    color: #7d7dfa;
+    text-decoration: none;
+}
+
+.main {
+    padding: 2rem 1rem;
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    border: 1px solid var(--card-color);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.card:hover {
+    border: 1px solid var(--white);
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.img-pro {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    margin: 0 auto;
+    height: 250px;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+}
+
+.card-content {
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+.links {
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-family: var(--font-family);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.repo-link,
+.web-link {
+    text-decoration: none;
+    color: var(--white);
+    padding: 10px;
+    border: 1px solid #895a02;
+    transition: all .3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.repo-link:hover,
+.web-link:hover {
+    background-color: #895a02;
+}
+
+.repo-link > i,
+.web-link > i {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header {
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 662px) {
+
+    .header {
+        margin: 0 1rem;
+    }
+
+    .header .header-title {
+        font-size: 1.4rem;
+    }
+
+    .header .header-p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .img-pro {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .links {
+        flex-direction: column;
+        padding: 7px 10px;
+        gap: 0.5rem;
+    }
+}
+
+
+
+
