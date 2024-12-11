@@ -87,6 +87,20 @@ body {
     padding: 1rem 0rem;
 }
 
+.tools {
+    display: flex;
+    width: 100px;
+    margin: 0.6rem auto;
+}
+
+.tools .tool-img {
+    width: 25px;
+    height: 25px;
+    display: block;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
 .links {
     padding: 10px 0px;
     display: flex;
