@@ -71,7 +71,7 @@ body {
 }
 
 .main {
-    padding: 2rem 1rem;
+    padding: 2rem .5rem;
     display: grid;
     align-items: center;
     gap: 2rem;
@@ -79,22 +79,21 @@ body {
 }
 
 .card {
-    border: 1px solid var(--card-color);
     width: 100%;
     padding: 1rem;
     border-radius: 10px;
     transition: all .3s ease;
-}
-
-.card:hover {
-    border: 1px solid var(--white);
-    transform: scale(1.1);
+    border: 1px solid #ffffff4d;
 }
 
 .card-title {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 1.2rem;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .img-pro {
@@ -104,12 +103,13 @@ body {
     margin: 0 auto;
     height: 250px;
     aspect-ratio: 16 / 9;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .card-content {
     text-align: center;
-    padding: 1rem 0rem;
+    padding: 1.2rem 0rem;
 }
 
 .tools {
@@ -142,7 +142,7 @@ body {
     text-decoration: none;
     color: var(--white);
     padding: 10px;
-    border: 1px solid #895a02;
+    border: 1px solid #ffffff4d;
     transition: all .3s ease;
     display: flex;
     align-items: center;
@@ -152,7 +152,7 @@ body {
 
 .repo-link:hover,
 .web-link:hover {
-    background-color: #895a02;
+    background-color: #0557cb;
 }
 
 .repo-link > i,
