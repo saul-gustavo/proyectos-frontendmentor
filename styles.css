@@ -63,24 +63,14 @@ body {
     margin: 1rem auto;
 }
 
-.header .autor .title-autor {
-    background: -webkit-linear-gradient(#9a09fb , #c690f5);
-    background-clip: content-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.header .autor
-.title-autor .link-perfil {
+.header .title-autor .link-perfil {
     text-decoration: none;
+    color: #fff;
+    transition: all .3s ease;
 }
 
-.header .autor
-.title-autor .link-perfil:hover {
-    background: -webkit-linear-gradient(#ece44c , #c690f5);
-    background-clip: content-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.header .title-autor .link-perfil:hover {
+    color: #1eddf7;
 }
 
 .main {
