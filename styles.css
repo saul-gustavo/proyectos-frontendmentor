@@ -58,7 +58,7 @@ body {
     text-decoration: none;
 }
 
-.header .autor {
+/* .header .autor {
     text-align: center;
     margin: 1rem auto;
 }
@@ -71,7 +71,7 @@ body {
 
 .header .title-autor .link-perfil:hover {
     color: #1eddf7;
-}
+} */
 
 .main {
     padding: 2rem .5rem;
