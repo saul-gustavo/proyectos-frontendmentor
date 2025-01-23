@@ -87,7 +87,7 @@ body {
     border-radius: 10px;
     transition: all .3s ease;
     border: 1px solid #ffffff4d;
-    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
 }
 
 .card-title {
@@ -105,8 +105,7 @@ body {
     display: block;
     object-fit: cover;
     margin: 0 auto;
-    height: 250px;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16/9;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
